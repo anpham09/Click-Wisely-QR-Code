@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click Wisely! | QR Code Safety</title>
+  <meta name="description" content="A short QR phishing awareness page from the Click Wisely! cybersecurity game." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon" aria-hidden="true">✓</span>
+        <span>
+          <strong>Click Wisely!</strong>
+          <small>Cybersecurity Awareness Game</small>
+        </span>
+      </a>
+      <a class="header-link" href="#quiz">Quick Quiz</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">YOU JUST SCANNED A QR CODE</p>
+        <h1>Would you have checked where it was taking you?</h1>
+        <p class="hero-text">
+          QR codes are convenient, but they hide the destination link until you scan.
+          That makes them useful for <strong>QR phishing, or “quishing.”</strong>
+        </p>
+        <a class="button" href="#research">See what the research found</a>
+      </div>
+    </section>
+
+    <section class="research" id="research">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow dark">THE NUMBERS MATTER</p>
+          <h2>Even tech-savvy users can miss the warning signs.</h2>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card primary-stat">
+            <span class="number">85%</span>
+            <p>of users in a computing building <strong>scanned without checking first.</strong></p>
+          </article>
+
+          <article class="stat-card">
+            <span class="number">92%</span>
+            <p>continued when the phishing URL was <strong>shortened in the preview.</strong></p>
+          </article>
+
+          <article class="stat-card">
+            <span class="number">56%</span>
+            <p>continued when the URL contained an obvious word such as <strong>“phish.”</strong></p>
+          </article>
+
+          <article class="stat-card">
+            <span class="number">19%</span>
+            <p>said it was difficult to see the <strong>entire URL on a mobile browser.</strong></p>
+          </article>
+        </div>
+
+        <div class="takeaway">
+          <div class="takeaway-mark">!</div>
+          <div>
+            <h3>The poster around a QR code does not prove the code is safe.</h3>
+            <p>
+              A fundraiser, raffle, free gift, or workplace notice can create a believable
+              reason to scan. Pause and inspect the destination before opening it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="wrap quiz-card">
+        <div class="quiz-copy">
+          <p class="eyebrow light">QUICK QUIZ</p>
+          <h2>You see a QR code for an office raffle. What should you do first?</h2>
+        </div>
+
+        <div class="answers">
+          <button data-correct="false">Scan it because the poster looks official.</button>
+          <button data-correct="true">Check the destination or verify who created the raffle.</button>
+          <button data-correct="false">Open it first and decide whether it looks safe afterward.</button>
+        </div>
+
+        <p class="result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="source">
+      <div class="wrap source-inner">
+        <strong>Research source</strong>
+        <p>
+          Sharevski, F., Mossano, M., Veit, M., Schiefer, G. &amp; Volkamer, M. (2024).
+          <em>Exploring Phishing Threats through QR Codes in Naturalistic Settings.</em>
+          Symposium on Usable Security and Privacy (USEC).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <strong>Click Wisely!</strong>
+      <span>Think before you scan.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
